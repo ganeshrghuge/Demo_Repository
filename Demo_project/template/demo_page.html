@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Redirect</title>
+</head>
+<body>
+{% load socialaccount %}
+
+<form method="post" action="1234">
+<table border="10px" align="center" style="margin-top:100px;">
+    <tr>
+        <td colspan="2" align="center"><strong>Students Registration</strong></td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Mobile No</td>
+        <td><input type="number"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="email"></td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><button id="submit">Submit</button>&nbsp;<button id="reset">Reset</button></td>
+    </tr>
+</table>
+</form>
+<br>
+<button style="margin-left:575px;"><a href="{% provider_login_url "google" %}">Login with Google</a></button>
+
+</body>
+</html>
